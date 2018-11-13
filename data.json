@@ -1,0 +1,13 @@
+{
+	"date": "2018-11-13",
+	"departure_flights": [
+		{
+			"name": "OK 0544",
+			"arrival_destination": "Gothenburg",
+			"departure_destination": "Prague",
+			"arrival_time": "",
+			"departure_time": "17:30",
+			"flight_status": "23:00"
+		}
+	]
+}
