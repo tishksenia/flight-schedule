@@ -27,6 +27,7 @@ let model = {
 		}
 		return this.delayed_flights;
 	},
+	//вернет массив объектов, имя которых содержит в себе value
 	findFlightByName: function(value) {
 		let matches = [];
 		let data = this.data;
@@ -95,6 +96,7 @@ let view = {
 		});
 	},
 
+	//вывод содержимого таблицы в зависимости от переданных параметров
 	outputFlightsTable: function(filter_parameter, results_array) {
 		if(results_array != undefined) {
 			this.buildTablePartFromArray(results_array);
@@ -119,6 +121,7 @@ let view = {
 		table_body.innerHTML = "";
 	},
 
+	//создает структуру строк, заполняет ее данными и присоединяет к таблице
 	buildTablePart: function(filter_parameter) {
 		let table_body = document.getElementsByClassName('time-table_content')[0];
 
@@ -145,7 +148,7 @@ let view = {
 			table_body.appendChild(row);
 		}
 	},
-
+	//создает 1 строку таблицы, соответствующую 1 записи о рейсе, и возвращает ее
 	makeRow: function(flight_object) {
 		let tr = document.createElement('tr');
 		for(let i in flight_object) {
@@ -156,6 +159,7 @@ let view = {
 		return tr;
 	},
 
+	//возвращает td.content_item
 	makeTd: function() {
 		let td = document.createElement('td');
 		td.classList.add('content_item');
