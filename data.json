@@ -1,13 +1,30 @@
 {
-	"date": "2018-11-13",
 	"departure_flights": [
 		{
 			"name": "OK 0544",
 			"arrival_destination": "Gothenburg",
-			"departure_destination": "Prague",
-			"arrival_time": "",
 			"departure_time": "17:30",
-			"flight_status": "23:00"
-		}
+			"flight_status": "registration is in progress"
+		},
+		{
+			"name": "B2 0861",
+			"arrival_destination": "Minsk",
+			"departure_time": "22:30",
+			"flight_status": "delayed"
+		},
+	],
+	"arrival_flights": [
+		{
+			"name": "OK 0544",
+			"departure_destination": "Prague",
+			"arrival_time": "14:30",
+			"flight_status": "landed"
+		},
+		{
+			"name": "QS 2507",
+			"departure_destination": "Marsa Alam (RMF)",
+			"arrival_time": "17:30",
+			"flight_status": "delayed"
+		},
 	]
 }
