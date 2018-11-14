@@ -46,7 +46,7 @@
 		},
 		{
 			"name": "QS 8536",
-			"departure_destination": "Frankfurt",
+			"departure_destination": "Prague",
 			"arrival_time": "20:00",
 			"flight_status": "in progress"
 		}
